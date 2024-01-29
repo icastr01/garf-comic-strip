@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page1</title>
+
+    <style>
+		* {
+			box-sizing: border-box;
+		}
+		body {
+            width: 100vw;
+            height: 100vh;
+			display: grid;
+			grid-template-columns: 1fr;
+			margin: 0;
+			gap: 10px;
+			padding: 10px;
+		}
+		.frame {
+			border: 10px solid black;
+            background: rgb(180,171,255);
+            background: linear-gradient(90deg, rgba(180,171,255,1) 0%, rgba(185,196,255,1) 43%, rgba(203,226,255,1) 100%);
+            box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.4) inset;
+            overflow: hidden;
+            border-radius: 1ex;
+            margin: 1ch;
+		}
+		img {
+			width: 500px;
+            height: 500px;
+            position: relative;
+            top: 30px;
+            margin:auto;
+            border-radius: 150px;
+            transition: transform 1s ease;
+		}
+        img:hover {
+            transform: rotate(360deg);
+
+        }
+        p:hover {
+            background-color: white;
+            border-radius: 150px;
+            font-size: 20px;
+            transition: all .5s ease-out;
+            margin: 1ch;
+            
+        }
+        .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+	</style>
+
+</head>
+<body>
+    
+    <div class="frame">
+        <pre>
+        <div>
+        <p>
+            Know what? Life's just too short
+        </p>
+        </div>
+        <div class="container">
+            <img src="https://static.vecteezy.com/system/resources/previews/010/360/017/original/simple-line-drawing-illustration-spider-black-and-white-drawing-silhouette-of-a-spider-halloween-symbol-magic-witchcraft-mysticism-isolated-on-white-background-free-vector.jpg" alt="Image 1" class="image">
+            <img src="https://canary.contestimg.wish.com/api/webimage/60d76bae43d4af6a7a7be412-contest.jpg?cache_buster=3d95f874ee72b8a60589e42476ce77b0" alt="Image 2" class="image">
+        </div>
+        </pre>
+	</div>
+
+</body>
+</html>
